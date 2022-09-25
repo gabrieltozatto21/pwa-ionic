@@ -1,20 +1,37 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title class="ion-text-center oleo-script">Devgram</ion-title>
+    <ion-buttons slot="end">
+      <ion-button slot="icon-only" class="camera" (click)="showSendPhoto()">
+        <ion-icon name="camera"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-tabs>
+    <ion-tab-bar>
+      <ion-tab-button tab="home">
+        <ion-icon name="home"></ion-icon>
+      </ion-tab-button>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+      <ion-tab-button tab="search">
+        <ion-icon name="search"></ion-icon>
+        <ion-badge>6</ion-badge>
+      </ion-tab-button>
+
+      <ion-tab-button tab="add-circle">
+        <ion-icon name="add-circle"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button tab="heart">
+        <ion-icon name="heart"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button tab="contact">
+        <ion-icon name="person-circle"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>

@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button slot="icon-only" class="close" (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-slides>
+      <ion-slide class="slides-photo">
+        <img src="http://lorempixel.com.br/largura/altura" class="inkwell" class="slide-img" alt="">
+        <small>Inkwell</small>
+      </ion-slide>
+
+      <ion-slide class="slides-photo">
+        <img src="http://lorempixel.com.br/largura/altura" class="willow" class="slide-img" alt="">
+        <small>Willow</small>
+      </ion-slide>
+
+      <ion-slide class="slides-photo">
+        <img src="http://lorempixel.com.br/largura/altura" class="nashville" class="slide-img" alt="">
+        <small>Nashville</small>
+      </ion-slide>
+    </ion-slides>
+
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-input type="text" placeholder="Título"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" placeholder="Mensagem" rows="3"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+
+    <ion-row class="no-padding">
+      <ion-col>
+        <ion-button fill="clear" size="small" color="danger"><ion-icon name="location"></ion-icon>Ativar localização</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <div class="padding">
+    <ion-button expand="block" size="large" fill="outline">Enviar</ion-button>
+  </div>
+</ion-content>

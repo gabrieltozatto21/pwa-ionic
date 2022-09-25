@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button slot="icon-only" class="close" (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <video id="video" width="100%" autoplay></video>
+    <canvas id="canvas"></canvas>
+  </ion-card>
+  <div class="padding">
+    <ion-button fill="outline" expand="block" size="large" (click)="takePicture()">Tirar foto</ion-button>
+  </div>
+</ion-content>
